@@ -1,0 +1,125 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  background-color: rgb(237, 236, 236);
+  display: flex;
+  flex: 1 1 0%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  position: relative;
+  z-index: 9;
+}
+
+.main-content {
+  flex: 1 1 0%;
+  padding: 2em;
+  padding-top: calc(64px + 2em);
+  
+}
+
+.sidebar-container.open
+{
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(255, 255, 255);
+  transition: margin 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  border-radius: 2px;
+  flex: 0 0 256px;
+  margin-left: 0px;
+}
+
+.menu-header
+{
+  position: fixed !important;
+  top: 0;
+}
+
+.header {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.sidebar-container
+{
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(255, 255, 255);
+  transition: margin 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  border-radius: 2px;
+  flex: 0 0 256px;
+  margin-left: 0px;
+  padding-top: 64px;
+}
+
+.sidebar-container-close
+{
+  margin-left: -256px;
+}
+
+.sidebar-container .sidebar
+{
+  top: 64px !important;
+}
+
+.docs-header {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+  font-weight: 600;
+}
+.docs-section {
+  border-top: 1px solid #eee;
+  padding: 4rem 0;
+  margin-bottom: 0;
+}
+.docs-example .row, .docs-example.row, .docs-example {
+  margin-bottom: 0;
+}
+.docs-example h1,
+.docs-example h2,
+.docs-example h3,
+.docs-example h4,
+.docs-example h5,
+.docs-example h6 {
+  margin-bottom: 1rem;
+}
+.heading-font-size {
+  font-size: 1.2rem;
+  color: #999;
+  letter-spacing: normal;
+}
+
+/* Larger than phone */
+@media (min-width: 550px) {
+  .header {
+    margin-top: 18rem;
+  }
+
+  .docs-section {
+    padding: 6rem 0;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  /* Re-overiding the width 100% declaration to match size of % based container */
+  .container {
+    /* width: 80%; */
+  }
+}
+
+img {
+  vertical-align: text-bottom;
+}
+
+.demoAppContainer h2 {
+  margin: 50px 0;
+  text-align: center;
+}
